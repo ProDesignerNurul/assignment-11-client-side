@@ -1,0 +1,26 @@
+.service-details{
+    box-shadow: 5px 5px 10px gray;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform .3s ease;
+}
+.service-details:hover{
+    transform: scale(1.1);
+}
+
+.service-details img{
+    border-radius: 10px;
+    border: 1px solid tomato;
+    transition: transform .3s ease;
+}
+
+.service-details img:hover{
+    transform: scale(1.1);
+}
+
+.service-details a button{
+    transition: transform .3s ease;
+}
+.service-details a button:hover{
+    transform: scale(1.1);
+}

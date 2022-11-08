@@ -51,9 +51,9 @@ const Home = () => {
 
 
             {/* second section  below */}
-            <div className='grid lg:grid-cols-2 lg:w-11/12 mx-auto mb-10 second-section'>
+            <div className='grid lg:grid-cols-2 lg:w-11/12 mx-auto mb-10 second-section border border-gray-500 p-8 rounded-lg'>
                 <div>
-                    <img className='w-4/5 lg:ml-12 rounded-lg border border-red-500 border-purple-300' src={img1} alt="" />
+                    <img className='w-4/5 rounded-lg border border-red-500' src={img1} alt="" />
                 </div>
 
                 <div className='flex justify-center items-center'>

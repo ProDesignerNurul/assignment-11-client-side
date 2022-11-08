@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import About from "../../components/About/About";
 import Service from "../../components/AllServices/Service/Service";
+import SingleServiceDetails from "../../components/AllServices/SingleServiceDetails/SingleServiceDetails";
 import SixServices from "../../components/AllServices/sixServices/SixServices";
 import Blogs from "../../components/Blogs/Blogs";
 import Home from "../../components/Home/Home";
@@ -51,6 +52,11 @@ const routes = createBrowserRouter([
                 path: '/sixservices',
                 element: <SixServices></SixServices>
                 
+            },
+            {
+                path: '/single-service-details/:id',
+                element: <SingleServiceDetails></SingleServiceDetails>,
+                loader: ({params}) => fetch(`http://localhost:5000/servicedetails/${params.id}`)
             }
         ]
     }

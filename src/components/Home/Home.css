@@ -6,8 +6,17 @@
     
   }
   .second-section img{
-    transition: transform .1s ease;
+    transition: transform .7s ease;
   }
   .second-section img:hover{
-    transform: rotate(180deg);
+    transform: rotate(360deg);
+  }
+  .second-section button{
+    transition: transform .2s ease;
+  }
+  .second-section button:hover{
+    transform: scale(1.1);
+    word-spacing: 5px;
+    letter-spacing: 5px;
+    padding: 0 30px;
   }

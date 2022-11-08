@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import About from "../../components/About/About";
 import Service from "../../components/AllServices/Service/Service";
+import SixServices from "../../components/AllServices/sixServices/SixServices";
 import Blogs from "../../components/Blogs/Blogs";
 import Home from "../../components/Home/Home";
 import Footer from "../../components/share/Footer/Footer";
@@ -29,6 +30,7 @@ const routes = createBrowserRouter([
                 path: '/services',
                 element: <Service></Service>
             },
+            
             {
                 path: '/footer',
                 element: <Footer></Footer>
@@ -44,6 +46,11 @@ const routes = createBrowserRouter([
             {
                 path: '/register',
                 element: <Register></Register>
+            },
+            {
+                path: '/sixservices',
+                element: <SixServices></SixServices>
+                
             }
         ]
     }

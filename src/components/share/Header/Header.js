@@ -13,7 +13,7 @@ const Header = () => {
 
     return (
         <div>
-            <div className="navbar bg-base-100 w-11/12 mx-auto mb-20">
+            <div className="navbar bg-base-100 w-11/12 mx-auto mb-6">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -25,7 +25,7 @@ const Header = () => {
                     </div>
                     <Link to="/" href="/" className="btn btn-ghost normal-case text-xl">
                         <img className='w-10 mr-4' src={logo} alt="" />
-                        <h2>NURUL BOOKS</h2>
+                        <h2 className='text-3xl'>NURUL <span className='text-purple-500'>RIDE SHARING</span></h2>
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">

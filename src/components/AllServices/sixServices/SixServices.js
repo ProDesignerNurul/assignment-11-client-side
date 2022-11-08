@@ -17,9 +17,9 @@ const SixServices = () => {
 
     return (
         <div>
-            <h2>six services length : </h2>
+            <h2 className='text-5xl mb-5 font-bold'>Our All <span className='text-purple-500'>Ride Sharing</span> Services Below </h2>
 
-            <div className='grid grid-cols-3 gap-10 w-11/12 mx-auto'>
+            <div className='grid grid-cols-3 gap-10 w-11/12 mx-auto mb-20'>
                 {
                     services.map( service => <SixServicesDetails
                     key={service._id}

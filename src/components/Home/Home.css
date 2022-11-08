@@ -5,3 +5,9 @@
     background: linear-gradient(to right, #151515 0%,rgba(21, 21, 21, 0) 100%); /* W3C */
     
   }
+  .second-section img{
+    transition: transform .1s ease;
+  }
+  .second-section img:hover{
+    transform: rotate(180deg);
+  }

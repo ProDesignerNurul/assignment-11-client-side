@@ -4,22 +4,40 @@ import SixServicesDetails from '../SixServicesDetails/SixServicesDetails';
 import './SixService.css';
 
 const SixServices = () => {
-    const {title, image_url, details, rating, total_view} = useLoaderData();
+    const { _id, title, image_url, details, rating, total_view} = useLoaderData();
 
 
-    // const [services, setServices] = useState([]);
+    const handleReview = event => {
+        event.preventDefault();
+        const form = event.target;
+        const message = form.message.value;
 
-    // useEffect( () => {
-    //     fetch(`http://localhost:5000/six-services-details`)
-    //     .then( res => res.json())
-    //     .then( data => {
-    //         setServices(data);
-    //     })
-    // } , [])
+        const review = {
+            message
+        }
+
+        fetch(`http://localhost:5000/review`, {
+            method: 'POST',
+            headers: {
+                'content-type' : 'application/json'
+            },
+            body: JSON.stringify(review)
+        })
+        .then( res => res.json())
+        .then( data => {
+            console.log(data)
+            if(data.acknowledged) {
+                alert('Review Success');
+                form.reset();
+            }
+        })
+        .catch(err => console.error(err))
+
+    }
 
     return (
         <div>
-            <h2 className='text-5xl mb-5 font-bold'>Our All <span className='text-purple-500'>Ride Sharing</span> Services Below </h2>
+            <h2 className='text-5xl mb-5 font-bold'>My <span className='text-purple-500'>Ride Sharing</span> Services Details Below </h2>
 
             <div className='border border-purple-500 p-8 mx-96 rounded-lg mb-20'>
             <img className='mx-auto rounded-lg' src={image_url} alt="" />
@@ -32,14 +50,15 @@ const SixServices = () => {
             </div>
             </div>
 
-            {/* <div className='grid grid-cols-3 gap-10 w-11/12 mx-auto mb-20'> */}
-                {/* {
-                    services.map( service => <SixServicesDetails
-                    key={service._id}
-                    service={service}
-                    ></SixServicesDetails>)
-                } */}
-            {/* </div> */}
+            <div className='w-3/5 mx-auto my-20'>
+
+            <form onSubmit={handleReview}>
+            <h2 className='flex justify-start mb-3 text-2xl'> <span className='text-red-400'>Review on :-- </span>  {title}</h2>
+            <textarea name="message" className="textarea textarea-primary w-2/4 flex justify-start h-28" placeholder="Enter Your Feedback On This Service" required ></textarea>
+            <button className='flex justify-start btn btn-outline btn-warning my-3' type="submit">Submit Your Review</button>
+            </form>
+
+            </div>
 
         </div>
     );

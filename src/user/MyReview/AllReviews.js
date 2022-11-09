@@ -8,7 +8,7 @@ const AllReviews = ({review}) => {
     console.log(review)
 
     return (
-        <div>
+        <div className='border border-red-400 rounded-md p-5 my-5'>
             
             <h2> My reviews : {message}</h2>
         </div>

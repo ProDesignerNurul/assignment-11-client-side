@@ -16,8 +16,8 @@ const MyReview = () => {
 
     return (
         <div>
-            <h2 className='text-4xl'>My Review : {reviews.length}</h2>
-            <div>
+            <h2 className='text-5xl text-red-500 font-bold my-8'>My All <span className='text-green-400'>Review</span> Below</h2>
+            <div className='lg:w-2/4 mx-auto gap-3'>
                 {
                     reviews.map( review => <AllReviews
                     key={review._id}

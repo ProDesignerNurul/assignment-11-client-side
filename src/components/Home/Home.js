@@ -59,8 +59,8 @@ const Home = () => {
                 </div>
 
                 <div className='flex justify-center items-center'>
-                    <div className='second-sec-info border border-red-600 p-36 rounded-xl'>
-                        <h2 className='text-4xl mb-5'>Lorem ipsum dolor sit amet.</h2>
+                    <div className='second-sec-info border border-red-600 p-40 rounded-xl'>
+                        <h2 className='text-4xl mb-5'>How To Find My Service</h2>
                         <p className='text-gray-400 text-lg lg:w-4/5 mx-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quae quo nulla esse ab, officia veniam modi, eos obcaecati assumenda totam adipisci dolorem sed. Neque, temporibus non? Nobis illum perferendis eius dignissimos quam quae consectetur, necessitatibus veritatis cumque consequatur corporis eligendi? Dolorem quae eligendi vitae magni ab tenetur tempora sequi!</p>
                         
                         <button className="btn btn-outline btn-warning mt-5">See More Information</button>

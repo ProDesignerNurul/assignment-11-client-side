@@ -49,8 +49,9 @@ const routes = createBrowserRouter([
                 element: <Register></Register>
             },
             {
-                path: '/sixservices',
-                element: <SixServices></SixServices>
+                path: '/sixservices/:id',
+                element: <SixServices></SixServices>,
+                loader: ({params}) => fetch(`http://localhost:5000/services/${params.id}`)
                 
             },
             {

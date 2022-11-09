@@ -1,14 +1,23 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../../AuthContext/UserContext';
 import logo from '../../../images/logo/nurulBooks.png';
 
 const Header = () => {
 
+    const { user, logOut } = useContext(AuthContext);
+
+    const handleLogOut = () => {
+        logOut()
+            .then(() => { })
+            .then(error => console.error(error))
+    }
+
     const menuItems =
         <>
-            <li><Link to="/home">Home</Link></li>
-            <li><Link to="/blogs">Blogs</Link></li>
-            <li><Link to="/about">About</Link></li>
+            <li className='btn btn-outline btn-warning mr-2 rounded-lg'><Link to="/home">Home</Link></li>
+            <li className='btn btn-outline btn-warning mr-2 rounded-lg'><Link to="/blogs">Blogs</Link></li>
+            <li className='btn btn-outline btn-warning mr-2 rounded-lg'><Link to="/about">About</Link></li>
         </>
 
     return (
@@ -29,12 +38,29 @@ const Header = () => {
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal p-0">
+                    <ul className="">
                         {menuItems}
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Get started</a>
+
+                    {
+                        user?.uid ?
+                            <>
+                                
+                                <a className="btn btn-outline btn-warning mr-2"  >Add Service</a>
+                                <a className="btn btn-outline btn-warning mr-2"  >My Review</a>
+                                <a className="btn btn-outline btn-warning mr-2" onClick={handleLogOut} >Log Out</a>
+                            </>
+                            :
+                            <>
+                                <a className="btn btn-outline btn-warning mr-2"><Link to='/login'>Log In</Link></a>
+                                <a className="btn btn-outline btn-warning mr-2"><Link to='/register'>Register</Link></a>
+                            </>
+                    }
+
+
+                    {/* <a className="btn"> <Link to='/login'>Log In</Link> </a> */}
                 </div>
             </div>
         </div>

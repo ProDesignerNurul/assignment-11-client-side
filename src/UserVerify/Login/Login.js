@@ -1,8 +1,44 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext, useState } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../../AuthContext/UserContext';
 import login from '../../images/login/login.webp';
 
 const Login = () => {
+
+    const [error, setError] = useState('');
+
+
+    const location = useLocation();
+
+    const from = location.state?.from?.pathname || '/';
+
+    
+
+    const {signIn} = useContext(AuthContext);
+
+    const navigate = useNavigate();
+
+    const handleSignIn = event => {
+        event.preventDefault();
+        const form = event.target;
+        const email = form.email.value;
+        const password = form.password.value;
+
+        signIn(email, password)
+        .then( result => {
+            const user = result.user;
+            console.log(user)
+            form.reset();
+            setError('');
+            navigate(from, {replace: true})
+        })
+        .catch( error => {
+            console.error(error)
+            setError(error.message);
+        })
+    }
+
+    
 
 
     
@@ -12,7 +48,7 @@ const Login = () => {
                 <div className="text-center lg:text-left">
                     {/* <img className='w-1/2 rounded-lg' src={login} alt="" /> */}
                 </div>
-                <form className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                <form onSubmit={handleSignIn} className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                     <h1 className="text-5xl font-bold text-center">Login now!</h1>
                     <div className="card-body">
                         <div className="form-control">
@@ -35,6 +71,7 @@ const Login = () => {
                         </div>
                         <p> Are you new in this Website, please <Link className='text-blue-700' to="/register"> Register</Link></p>
                     </div>
+                    <p className='text-red-500 mb-3'> {error}</p>
                 </form>
             </div>
         </div>

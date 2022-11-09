@@ -5,18 +5,29 @@
     background: linear-gradient(to right, #151515 0%,rgba(21, 21, 21, 0) 100%); /* W3C */
     
   }
+  .second-section{
+    box-shadow: 1px 1px 10px gray;
+  }
   .second-section img{
     transition: transform .7s ease;
+    box-shadow: 1px 1px 10px gray;
   }
   .second-section img:hover{
-    transform: rotate(360deg);
+    transform: rotate(-360deg);
   }
   .second-section button{
-    transition: transform .2s ease;
+    transition: transform .8s ease;
   }
   .second-section button:hover{
     transform: scale(1.1);
     word-spacing: 5px;
     letter-spacing: 5px;
     padding: 0 30px;
+  }
+  .second-section .second-sec-info{
+    transition: transform .7s ease;
+    box-shadow: 1px 1px 10px gray;
+  }
+  .second-section .second-sec-info:hover{
+    transform: rotate(360deg);
   }

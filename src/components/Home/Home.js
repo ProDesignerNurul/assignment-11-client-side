@@ -13,7 +13,7 @@ const Home = () => {
         <div>
 
             <div>
-                <div className="carousel w-11/12 mx-auto lg:h-screen h-">
+                <div className="carousel w-11/12 mx-auto  h-">
                     <div id="slide1" className="carousel-item relative w-full">
                         <img alt="" src={one} className="w-full" />
                         <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -57,7 +57,7 @@ const Home = () => {
                 </div>
 
                 <div className='flex justify-center items-center'>
-                    <div>
+                    <div className='second-sec-info border border-red-600 p-36 rounded-xl'>
                         <h2 className='text-4xl mb-5'>Lorem ipsum dolor sit amet.</h2>
                         <p className='text-gray-400 text-lg lg:w-4/5 mx-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quae quo nulla esse ab, officia veniam modi, eos obcaecati assumenda totam adipisci dolorem sed. Neque, temporibus non? Nobis illum perferendis eius dignissimos quam quae consectetur, necessitatibus veritatis cumque consequatur corporis eligendi? Dolorem quae eligendi vitae magni ab tenetur tempora sequi!</p>
                         

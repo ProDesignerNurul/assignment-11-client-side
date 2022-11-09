@@ -48,14 +48,14 @@ const Header = () => {
                         user?.uid ?
                             <>
                                 
-                                <a className="btn btn-outline btn-warning mr-2"  >Add Service</a>
-                                <a className="btn btn-outline btn-warning mr-2"  >My Review</a>
-                                <a className="btn btn-outline btn-warning mr-2" onClick={handleLogOut} >Log Out</a>
+                                <Link to="/add-service" className="btn btn-outline btn-warning mr-2"  >Add Service</Link>
+                                <Link to="/my-review" className="btn btn-outline btn-warning mr-2"  >My Review</Link>
+                                <Link className="btn btn-outline btn-warning mr-2" onClick={handleLogOut} >Log Out</Link>
                             </>
                             :
                             <>
-                                <a className="btn btn-outline btn-warning mr-2"><Link to='/login'>Log In</Link></a>
                                 <a className="btn btn-outline btn-warning mr-2"><Link to='/register'>Register</Link></a>
+                                <a className="btn btn-outline btn-warning mr-2"><Link to='/login'>Log In</Link></a>
                             </>
                     }
 

@@ -7,6 +7,7 @@ import './Home.css';
 import Service from '../AllServices/Service/Service';
 import img1 from '../../images/secondSection/1.jpg';
 import img2 from '../../images/secondSection/2.jpg';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -47,6 +48,7 @@ const Home = () => {
 
             <div className='my-20'>
                 <Service></Service>
+                <button className="btn btn-outline btn-warning mt-10 text-2xl px-14"><Link to="/six-service-details"> See More Information</Link> </button>
             </div>
 
 

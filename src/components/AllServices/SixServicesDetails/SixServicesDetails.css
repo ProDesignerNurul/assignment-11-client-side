@@ -1,0 +1,26 @@
+.total-service-details{
+    box-shadow: 5px 5px 10px gray;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform .3s ease;
+}
+/* .total-service-details:hover{
+    transform: scale(1.1);
+} */
+
+.total-service-details img{
+    border-radius: 10px;
+    border: 1px solid tomato;
+    transition: transform .7s ease;
+}
+
+.total-service-details img:hover{
+    transform: rotate(360deg);
+}
+
+.total-service-details a button{
+    transition: transform .3s ease;
+}
+.total-service-details a button:hover{
+    transform: scale(1.1);
+}

@@ -1,18 +1,34 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useLoaderData } from 'react-router-dom';
+import TotalServiceDetails from '../TotalServiceDetails/TotalServiceDetails';
+import './SixServicesDetails.css';
 
-const SixServicesDetails = ({service}) => {
+const SixServicesDetails = () => {
 
-    const {name, img, details} = service;
+    const [sixServices, setSixServices] = useState([]);
+
+    useEffect( () => {
+        fetch(`http://localhost:5000/all-services`)
+        .then( res => res.json())
+        .then( data => {
+            console.log(data)
+            setSixServices(data)
+        })
+    } , [])
+
+
 
     return (
-        <div className='service-details'>
-            <img src={img} alt="" />
-            <h2 className='text-3xl my-5'>{name}</h2>
-            <p>`{details.slice(0, 100)} <div className=""></div>`</p>
-            <Link to={`/single-service-details/${service.id}`}> <button className="btn btn-outline btn-warning w-full">Click For See All Details</button> </Link>
-            
-            
+        <div>
+            <h2 className='text-5xl mb-5 font-bold'>Our All <span className='text-purple-500'>Ride Sharing</span> Services Below </h2>
+            <div className='total-service-details grid grid-cols-3 gap-10 w-11/12 mx-auto mb-20'>
+                {
+                    sixServices.map( service => <TotalServiceDetails
+                    key={service._id}
+                    service={service}
+                    ></TotalServiceDetails>)
+                }
+            </div>
         </div>
     );
 };

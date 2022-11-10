@@ -44,15 +44,17 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> 
+            <hr className='mt-28' />
 
             <div className='my-20'>
                 <Service></Service>
                 <button className="btn btn-outline btn-warning mt-10 text-2xl px-14"><Link to="/six-service-details"> See More Services</Link> </button>
             </div>
-
+                    <hr />
 
             {/* second section  below */}
+                <h2 className="text-6xl mb-6 mt-12 font-bold"> Service Finding <span className='text-red-500'>Information</span> </h2>
             <div className='grid lg:grid-cols-2 lg:w-11/12 mx-auto mb-10 second-section border border-gray-500 p-8 rounded-lg'>
                 <div>
                     <img className='w-4/5 rounded-lg border border-red-500' src={img1} alt="" />
@@ -66,6 +68,121 @@ const Home = () => {
                         <button className="btn btn-outline btn-warning mt-5">See More Information</button>
                     </div>
                 </div>
+            </div>
+
+
+                    <hr className='my-28' />
+
+
+            <div className='w-11/12 mx-auto'> 
+                <h2 className="text-6xl font-bold pb-5 rounded-lg p-4 long-time-purchase"> <span className='text-red-400'>Long Time</span> Purchase Details</h2>
+                <div className='grid grid-cols-1 lg:grid-cols-4 gap-10 my-10'>
+                    <div className='long-time-purchase border border-red-400 p-4 rounded-lg'>
+                        <h2 className="text-2xl"> 1 Day Booking</h2>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> Price : <span className='text-red-500'> 200 </span> TAKA </p>
+                    </div>
+
+                    <div className='long-time-purchase border border-red-400 p-4 rounded-lg'>
+                        <h2 className="text-2xl"> 1 Day Booking</h2>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> Price : <span className='text-red-500'> 200 </span> TAKA </p>
+                    </div>
+
+                    <div className='long-time-purchase border border-red-400 p-4 rounded-lg'>
+                        <h2 className="text-2xl"> 1 Day Booking</h2>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> Price : <span className='text-red-500'> 200 </span> TAKA </p>
+                    </div>
+
+                    <div className='long-time-purchase border border-red-400 p-4 rounded-lg'>
+                        <h2 className="text-2xl"> 1 Day Booking</h2>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> Price : <span className='text-red-500'> 200 </span> TAKA </p>
+                    </div>
+
+                    <div className='long-time-purchase border border-red-400 p-4 rounded-lg'>
+                        <h2 className="text-2xl"> 1 Day Booking</h2>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> Price : <span className='text-red-500'> 200 </span> TAKA </p>
+                    </div>
+
+                    <div className='long-time-purchase border border-red-400 p-4 rounded-lg'>
+                        <h2 className="text-2xl"> 1 Day Booking</h2>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> Price : <span className='text-red-500'> 200 </span> TAKA </p>
+                    </div>
+
+                    <div className='long-time-purchase border border-red-400 p-4 rounded-lg'>
+                        <h2 className="text-2xl"> 1 Day Booking</h2>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> Price : <span className='text-red-500'> 200 </span> TAKA </p>
+                    </div>
+
+                    <div className='long-time-purchase border border-red-400 p-4 rounded-lg'>
+                        <h2 className="text-2xl"> 1 Day Booking</h2>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> feature One </p>
+                        <p> Price : <span className='text-red-500'> 200 </span> TAKA </p>
+                    </div>
+                </div>
+                
+                
             </div>
         </div>
     );

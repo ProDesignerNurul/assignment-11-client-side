@@ -31,3 +31,8 @@
   .second-section .second-sec-info:hover{
     transform: rotate(360deg);
   }
+
+
+  .long-time-purchase{
+    box-shadow: 5px 5px 10px gray;
+  }

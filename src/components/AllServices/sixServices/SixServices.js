@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../../../AuthContext/UserContext';
+import MyReview from '../../../user/MyReview/MyReview';
 import SixServicesDetails from '../SixServicesDetails/SixServicesDetails';
 import './SixService.css';
 
@@ -66,6 +67,12 @@ const SixServices = () => {
             </form>
 
             </div>
+
+            <div className='border border-purple-500 p-8 mx-96 rounded-lg mb-20'>
+                <MyReview></MyReview>
+            </div>
+
+            
 
         </div>
     );

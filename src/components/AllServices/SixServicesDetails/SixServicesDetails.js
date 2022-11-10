@@ -11,7 +11,7 @@ const SixServicesDetails = () => {
     const [sixServices, setSixServices] = useState([]);
 
     useEffect( () => {
-        fetch(`http://localhost:5000/all-services`)
+        fetch(`https://assignment-11-server-prodesignernurul.vercel.app/all-services`)
         .then( res => res.json())
         .then( data => {
             console.log(data)

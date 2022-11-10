@@ -8,7 +8,7 @@ const AllReviews = ({ review, handleDelete, handleStatusUpdate }) => {
     // const handleDelete = id => {
     //     const proceed = window.confirm(`Are You Sure, You Want to Delete This Item`);
     //     if(proceed) {
-    //         fetch(`http://localhost:5000/review/${id}`, {
+    //         fetch(`https://assignment-11-server-prodesignernurul.vercel.app/review/${id}`, {
     //             method: 'DELETE'
     //         })
     //         .then( res => res.json())

@@ -5,7 +5,7 @@ import SixServicesDetails from '../SixServicesDetails/SixServicesDetails';
 import './SixService.css';
 
 const SixServices = () => {
-    const { _id, title, image_url, details, rating, total_view} = useLoaderData();
+    const { _id, title, image_url,price, details, rating, total_view} = useLoaderData();
     const {user} = useContext(AuthContext);
 
 
@@ -41,7 +41,7 @@ const SixServices = () => {
     }
 
     return (
-        <div>
+        <div >
             <h2 className='text-5xl mb-5 font-bold'>My <span className='text-purple-500'>Ride Sharing</span> Services Details Below </h2>
 
             <div className='border border-purple-500 p-8 mx-96 rounded-lg mb-20'>
@@ -51,6 +51,7 @@ const SixServices = () => {
             <div className='flex justify-between'>
                 <p className='text-red-400 mt-4'>Ratings : {rating?.number}</p>
                 <p className='text-red-400 mt-4'>Total Service : {total_view}</p>
+                <p className='text-red-400 mt-4'>Service Price : <span>{price} </span> TK </p>
                 <p className='text-red-400 mt-4'>Feedback : {rating?.badge}</p>
             </div>
             </div>

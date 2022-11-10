@@ -1,11 +1,14 @@
 import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../AuthContext/UserContext';
+import useTitle from '../../hooks/useTitle';
 import login from '../../images/login/login.webp';
 
 const Login = () => {
 
     const [error, setError] = useState('');
+
+    useTitle('Login')
 
 
     const location = useLocation();

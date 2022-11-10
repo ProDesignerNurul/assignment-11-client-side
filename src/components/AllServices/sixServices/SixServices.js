@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../../../AuthContext/UserContext';
+import useTitle from '../../../hooks/useTitle';
 import MyReview from '../../../user/MyReview/MyReview';
 import SixServicesDetails from '../SixServicesDetails/SixServicesDetails';
 import './SixService.css';
@@ -9,6 +10,7 @@ const SixServices = () => {
     const { _id, title, image_url,price, details, rating, total_view} = useLoaderData();
     const {user} = useContext(AuthContext);
 
+    useTitle('Service Details')
 
     const handleReview = event => {
         event.preventDefault();

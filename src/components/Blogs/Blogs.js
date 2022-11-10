@@ -1,6 +1,10 @@
 import React from 'react';
+import useTitle from '../../hooks/useTitle';
 
 const Blogs = () => {
+
+    useTitle('Blogs')
+
     return (
         <div className='lg:w-2/4 mx-auto text-justify my-20'>
 

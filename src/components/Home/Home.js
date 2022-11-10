@@ -17,8 +17,12 @@ import slideImg5 from '../../images/sliderImg/5.jpg';
 import slideImg6 from '../../images/sliderImg/6.jpg';
 import slideImg7 from '../../images/sliderImg/7.jpg';
 import slideImg8 from '../../images/sliderImg/8.jpg';
+import useTitle from '../../hooks/useTitle';
 
 const Home = () => {
+
+    useTitle('Home')
+
     return (
         <div>
 
@@ -109,108 +113,108 @@ const Home = () => {
             <div className='w-11/12 mx-auto'> 
                 <h2 className="text-6xl font-bold pb-5 rounded-lg p-4 long-time-purchase"> <span className='text-red-400'>Long Time</span> Purchase Details</h2>
                 <div className='grid grid-cols-1 lg:grid-cols-4 gap-10 my-10'>
-                    <div className='long-time-purchase border border-red-400 p-4 rounded-lg'>
-                        <h2 className="text-2xl"> 1 Day Booking</h2>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> Price : <span className='text-red-500'> 200 </span> TAKA </p>
+                    <div className='long-time-purchase border border-red-400 p-4 rounded-lg text-start pl-10'>
+                        <h2 className="text-2xl"> One Day Booking</h2>
+                        <p> 1. Long Time Riding </p>
+                        <p> 2. Your Targeted Location </p>
+                        <p> 3. Your Chooseable Time </p>
+                        <p> 4. Very Good Service </p>
+                        <p> 5. Intaligant Driver </p>
+                        <p> 6. Night Service </p>
+                        <p> 7. Per Day 24 Hour Service </p>
+                        <p> 8. Per Week 6 Day Service </p>
+                        <p> Price : <span className='text-red-500'> 500 </span> TAKA </p>
                     </div>
 
-                    <div className='long-time-purchase border border-red-400 p-4 rounded-lg'>
-                        <h2 className="text-2xl"> 1 Day Booking</h2>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> Price : <span className='text-red-500'> 200 </span> TAKA </p>
+                    <div className='long-time-purchase border border-red-400 p-4 rounded-lg text-start pl-10'>
+                        <h2 className="text-2xl"> One Week Booking</h2>
+                        <p> 1. Long Time Riding </p>
+                        <p> 2. Your Targeted Location </p>
+                        <p> 3. Your Chooseable Time </p>
+                        <p> 4. Very Good Service </p>
+                        <p> 5. Intaligant Driver </p>
+                        <p> 6. Night Service </p>
+                        <p> 7. Per Day 24 Hour Service </p>
+                        <p> 8. Per Week 6 Day Service </p>
+                        <p> Price : <span className='text-red-500'> 1000 </span> TAKA </p>
                     </div>
 
-                    <div className='long-time-purchase border border-red-400 p-4 rounded-lg'>
-                        <h2 className="text-2xl"> 1 Day Booking</h2>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> Price : <span className='text-red-500'> 200 </span> TAKA </p>
+                    <div className='long-time-purchase border border-red-400 p-4 rounded-lg text-start pl-10'>
+                        <h2 className="text-2xl"> One Month Booking</h2>
+                        <p> 1. Long Time Riding </p>
+                        <p> 2. Your Targeted Location </p>
+                        <p> 3. Your Chooseable Time </p>
+                        <p> 4. Very Good Service </p>
+                        <p> 5. Intaligant Driver </p>
+                        <p> 6. Night Service </p>
+                        <p> 7. Per Day 24 Hour Service </p>
+                        <p> 8. Per Week 6 Day Service </p>
+                        <p> Price : <span className='text-red-500'> 5000 </span> TAKA </p>
                     </div>
 
-                    <div className='long-time-purchase border border-red-400 p-4 rounded-lg'>
-                        <h2 className="text-2xl"> 1 Day Booking</h2>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> Price : <span className='text-red-500'> 200 </span> TAKA </p>
+                    <div className='long-time-purchase border border-red-400 p-4 rounded-lg text-start pl-10'>
+                        <h2 className="text-2xl"> Six Month Booking</h2>
+                        <p> 1. Long Time Riding </p>
+                        <p> 2. Your Targeted Location </p>
+                        <p> 3. Your Chooseable Time </p>
+                        <p> 4. Very Good Service </p>
+                        <p> 5. Intaligant Driver </p>
+                        <p> 6. Night Service </p>
+                        <p> 7. Per Day 24 Hour Service </p>
+                        <p> 8. Per Week 6 Day Service </p>
+                        <p> Price : <span className='text-red-500'> 25000 </span> TAKA </p>
                     </div>
 
-                    <div className='long-time-purchase border border-red-400 p-4 rounded-lg'>
-                        <h2 className="text-2xl"> 1 Day Booking</h2>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> Price : <span className='text-red-500'> 200 </span> TAKA </p>
+                    <div className='long-time-purchase border border-red-400 p-4 rounded-lg text-start pl-10'>
+                        <h2 className="text-2xl"> One Year Booking</h2>
+                        <p> 1. Long Time Riding </p>
+                        <p> 2. Your Targeted Location </p>
+                        <p> 3. Your Chooseable Time </p>
+                        <p> 4. Very Good Service </p>
+                        <p> 5. Intaligant Driver </p>
+                        <p> 6. Night Service </p>
+                        <p> 7. Per Day 24 Hour Service </p>
+                        <p> 8. Per Week 6 Day Service </p>
+                        <p> Price : <span className='text-red-500'> 40000 </span> TAKA </p>
                     </div>
 
-                    <div className='long-time-purchase border border-red-400 p-4 rounded-lg'>
-                        <h2 className="text-2xl"> 1 Day Booking</h2>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> Price : <span className='text-red-500'> 200 </span> TAKA </p>
+                    <div className='long-time-purchase border border-red-400 p-4 rounded-lg text-start pl-10'>
+                        <h2 className="text-2xl"> Tow Year Booking</h2>
+                        <p> 1. Long Time Riding </p>
+                        <p> 2. Your Targeted Location </p>
+                        <p> 3. Your Chooseable Time </p>
+                        <p> 4. Very Good Service </p>
+                        <p> 5. Intaligant Driver </p>
+                        <p> 6. Night Service </p>
+                        <p> 7. Per Day 24 Hour Service </p>
+                        <p> 8. Per Week 6 Day Service </p>
+                        <p> Price : <span className='text-red-500'> 75000 </span> TAKA </p>
                     </div>
 
-                    <div className='long-time-purchase border border-red-400 p-4 rounded-lg'>
-                        <h2 className="text-2xl"> 1 Day Booking</h2>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> Price : <span className='text-red-500'> 200 </span> TAKA </p>
+                    <div className='long-time-purchase border border-red-400 p-4 rounded-lg text-start pl-10'>
+                        <h2 className="text-2xl"> Five Year Booking</h2>
+                        <p> 1. Long Time Riding </p>
+                        <p> 2. Your Targeted Location </p>
+                        <p> 3. Your Chooseable Time </p>
+                        <p> 4. Very Good Service </p>
+                        <p> 5. Intaligant Driver </p>
+                        <p> 6. Night Service </p>
+                        <p> 7. Per Day 24 Hour Service </p>
+                        <p> 8. Per Week 6 Day Service </p>
+                        <p> Price : <span className='text-red-500'> 140000 </span> TAKA </p>
                     </div>
 
-                    <div className='long-time-purchase border border-red-400 p-4 rounded-lg'>
-                        <h2 className="text-2xl"> 1 Day Booking</h2>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> feature One </p>
-                        <p> Price : <span className='text-red-500'> 200 </span> TAKA </p>
+                    <div className='long-time-purchase border border-red-400 p-4 rounded-lg text-start pl-10'>
+                        <h2 className="text-2xl"> Ten Year Booking</h2>
+                        <p> 1. Long Time Riding </p>
+                        <p> 2. Your Targeted Location </p>
+                        <p> 3. Your Chooseable Time </p>
+                        <p> 4. Very Good Service </p>
+                        <p> 5. Intaligant Driver </p>
+                        <p> 6. Night Service </p>
+                        <p> 7. Per Day 24 Hour Service </p>
+                        <p> 8. Per Week 6 Day Service </p>
+                        <p> Price : <span className='text-red-500'> 250000 </span> TAKA </p>
                     </div>
                 </div>
                 

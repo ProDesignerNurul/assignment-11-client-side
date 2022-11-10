@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
+import useTitle from '../../../hooks/useTitle';
 import TotalServiceDetails from '../TotalServiceDetails/TotalServiceDetails';
 import './SixServicesDetails.css';
 
 const SixServicesDetails = () => {
+
+    useTitle('All Services')
 
     const [sixServices, setSixServices] = useState([]);
 

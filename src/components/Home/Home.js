@@ -9,11 +9,40 @@ import img1 from '../../images/secondSection/1.jpg';
 import img2 from '../../images/secondSection/2.jpg';
 import { Link } from 'react-router-dom';
 
+import slideImg1 from '../../images/sliderImg/1.jpg';
+import slideImg2 from '../../images/sliderImg/2.jpg';
+import slideImg3 from '../../images/sliderImg/3.jpg';
+import slideImg4 from '../../images/sliderImg/4.jpg';
+import slideImg5 from '../../images/sliderImg/5.jpg';
+import slideImg6 from '../../images/sliderImg/6.jpg';
+import slideImg7 from '../../images/sliderImg/7.jpg';
+import slideImg8 from '../../images/sliderImg/8.jpg';
+
 const Home = () => {
     return (
         <div>
 
-            <div>
+            <section className="slider-img">
+
+                    <div className="box">
+                        {/* <span className='slide1'> <img src={slideImg1} alt="" /></span> */}
+
+                        <span className='slide1'> <img src={slideImg1} alt="" /></span>
+                        <span className='slide2'> <img src={slideImg2} alt="" /></span>
+                        <span className='slide3'> <img src={slideImg3} alt="" /></span>
+                        <span className='slide4'> <img src={slideImg4} alt="" /></span>
+                        <span className='slide5'> <img src={slideImg5} alt="" /></span>
+                        <span className='slide6'> <img src={slideImg6} alt="" /></span>
+                        <span className='slide7'> <img src={slideImg7} alt="" /></span>
+                        <span className='slide8'> <img src={slideImg8} alt="" /></span>
+
+
+                        {/* <span style="--i:1;"> <img src="img/g-1.jpg" alt=""> </span> */}
+                    </div>
+
+            </section>
+
+            {/* <div>
                 <div className="carousel w-11/12 mx-auto  h-">
                     <div id="slide1" className="carousel-item relative w-full">
                         <img alt="" src={one} className="w-full" />
@@ -44,7 +73,10 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </div> 
+            </div>  */}
+
+            
+
             <hr className='mt-28' />
 
             <div className='my-20'>
@@ -63,7 +95,7 @@ const Home = () => {
                 <div className='flex justify-center items-center'>
                     <div className='second-sec-info border border-red-600 p-40 rounded-xl'>
                         <h2 className='text-4xl mb-5'>How To Find My Service</h2>
-                        <p className='text-gray-400 text-lg lg:w-4/5 mx-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quae quo nulla esse ab, officia veniam modi, eos obcaecati assumenda totam adipisci dolorem sed. Neque, temporibus non? Nobis illum perferendis eius dignissimos quam quae consectetur, necessitatibus veritatis cumque consequatur corporis eligendi? Dolorem quae eligendi vitae magni ab tenetur tempora sequi!</p>
+                        <p className='text-gray-400 text-lg lg:w-4/5 mx-auto'>When you request a ride, your app sends your request to nearby drivers. After you're matched with a driver, your app shares info about the vehicle and driver headed to your pickup location. <br /> Tap the bar that includes the driver's name, photo, and vehicle. This displays a photo of your driver along with the vehicle's make, model, and license plate number.</p>
                         
                         <button className="btn btn-outline btn-warning mt-5">See More Information</button>
                     </div>

@@ -27,11 +27,31 @@ const MyReview = () => {
                     alert(`Deleted Successfully`);
                     const remaining = reviews.filter( review => review._id !== id);
                     setReviews(remaining);
-
-
                 }
             })
         }
+    }
+
+    const handleStatusUpdate = id => {
+        fetch(`http://localhost:5000/review/${id}`, {
+            method: 'PATCH',
+            headers: {
+                'content-type' : 'application/json'
+            },
+            body: JSON.stringify({status: 'Approved'})
+        })
+        .then( res => res.json())
+        .then( data => {
+            console.log(data);
+            if(data.modifiedCount > 0) {
+                const remaining = reviews.filter( review => review._id !== id);
+                const approving = reviews.find( review => review._id === id);
+                approving.status = 'Approved';
+
+                const newReviews = [approving, ...remaining ];
+                setReviews(newReviews);
+            }
+        })
     }
 
     return (
@@ -43,6 +63,7 @@ const MyReview = () => {
                     key={review._id}
                     review={review}
                     handleDelete={handleDelete}
+                    handleStatusUpdate={handleStatusUpdate}
                     ></AllReviews>)
                 }
             </div>
